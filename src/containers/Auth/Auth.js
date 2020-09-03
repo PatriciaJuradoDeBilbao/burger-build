@@ -61,7 +61,7 @@ const auth = props => {
         setAuthForm(updatedControls)
     }
 
-    const submitHandler = ( event ) => {
+    const submitHandler = event => {
         event.preventDefault()
         props.onAuth( authForm.email.value, authForm.password.value, isSignup )
     }
@@ -113,11 +113,11 @@ const auth = props => {
             {errorMessage}
             <form onSubmit={submitHandler}>
                 {form}
-                <Button btnType="Success">SUBMIT</Button>
+                <Button btnType="Success">Submit</Button>
             </form>
             <Button 
                 clicked={switchAuthModeHandler}
-                btnType="Danger">SWITCH TO {isSignup ? 'SIGNIN' : 'SIGNUP'}</Button>
+                btnType="Danger"> {isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign up"}</Button>
         </div>
     )
 }

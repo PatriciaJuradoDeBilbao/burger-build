@@ -6,10 +6,10 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: white;
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3 ease-out;
+    background-color: #D69764;
 }
 
 @media (min-width: 500px) {
@@ -23,12 +23,16 @@
 
 }
 
-
 .Close {
     transform: translateX(-100%)
 }
 
 .Logo {
-    height: 11%;
-    margin-bottom: 32px;
+    height: 8%;
+    margin-bottom: 15px;
+}
+
+.Nav {
+    padding-top: 10px;
+    border-top: 2px solid #886547;
 }

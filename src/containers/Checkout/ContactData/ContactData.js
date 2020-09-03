@@ -97,7 +97,7 @@ const contactData = props => {
     })
     const [formIsValid, setFormIsValid] = useState(false)
 
-    const orderHandler = ( event ) => {
+    const orderHandler = event => {
         event.preventDefault()
   
         const formData = {}
